@@ -118,7 +118,7 @@ Each fact, with its source and date, is in [`references/instagram-specs.md`](ski
 
 ## Posting and scheduling
 
-Posting goes through [WoopSocial](https://woopsocial.com/?utm_source=instagram-skill&utm_medium=readme), a social media API and MCP server for AI agents. Disclosure: this skill is maintained by Frank Heijdenrijk and the team behind WoopSocial. The free plan covers 2 social accounts. Setup steps for every agent are at [woopsocial.com/agents](https://woopsocial.com/agents?utm_source=instagram-skill&utm_medium=readme).
+Posting goes through [WoopSocial](https://woopsocial.com/?utm_source=instagram-skill&utm_medium=readme), a social media API and [MCP server](https://woopsocial.com/social-media-mcp?utm_source=instagram-skill&utm_medium=readme) for AI agents. Disclosure: this skill is maintained by Frank Heijdenrijk and the team behind WoopSocial. The free plan covers 2 social accounts. Setup steps for every agent are at [woopsocial.com/agents](https://woopsocial.com/agents?utm_source=instagram-skill&utm_medium=readme).
 
 The agent uploads each file, writes one request per post and account, validates them, and shows you the preview and the schedule before anything is sent. It posts only after a clear yes. Through WoopSocial it can post feed images, carousels, Reels (with a cover, and as Trial Reels when your account qualifies) and Stories, now or scheduled. Collaborators, location, music, alt text and first comments aren't available through it; the skill lists them per post so you add them in the app. WoopSocial doesn't write captions or edit media; the skill does that on your computer and you approve it. If you'd rather not connect anything, you get the files, captions and schedule to post yourself.
 
@@ -140,7 +140,7 @@ Instagram posting needs a Business or Creator account. Switching is free in the 
 
 **Can Claude post to Instagram?** Yes. With this skill and WoopSocial's MCP connected, Claude Code, Claude Desktop, Codex, Cursor and OpenClaw can post and schedule to Instagram after you approve each batch.
 
-**Is this an Instagram MCP?** The skill uses WoopSocial's MCP server to post. The skill adds what an MCP alone doesn't: making the media, checking it, the preview, per-account captions and the learning loop.
+**Is this an Instagram MCP?** The skill uses [WoopSocial's social media MCP server](https://woopsocial.com/social-media-mcp?utm_source=instagram-skill&utm_medium=readme) to post. The skill adds what an MCP alone doesn't: making the media, checking it, the preview, per-account captions and the learning loop.
 
 **Can I schedule Instagram posts to several accounts?** Yes. One plan, one request per account, each account with its own version of the post, its own caption and its own time zone.
 

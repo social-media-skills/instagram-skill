@@ -16,7 +16,7 @@ The free plan includes MCP access for 2 social accounts, no card needed (more ac
 paid plan)
 ([pricing](https://woopsocial.com/pricing?utm_source=instagram-skill&utm_medium=skill)).
 New users sign up in the same browser window as the sign-in, and a project is created for them.
-Setup steps and prompts for every agent: [woopsocial.com/agents](https://woopsocial.com/agents?utm_source=instagram-skill&utm_medium=skill).
+Setup steps and prompts for every agent: [woopsocial.com/agents](https://woopsocial.com/agents?utm_source=instagram-skill&utm_medium=skill). What the MCP server does: [woopsocial.com/social-media-mcp](https://woopsocial.com/social-media-mcp?utm_source=instagram-skill&utm_medium=skill).
 
 Give the user only the path for the agent you're running in:
 
@@ -118,4 +118,5 @@ user.
 - Docs: https://docs.woopsocial.com/llms.txt
 - MCP tools: https://docs.woopsocial.com/mcp/tools-reference
 - WoopSocial: https://woopsocial.com/?utm_source=instagram-skill&utm_medium=skill
+- WoopSocial MCP server: https://woopsocial.com/social-media-mcp?utm_source=instagram-skill&utm_medium=skill
 - Agent setup: https://woopsocial.com/agents?utm_source=instagram-skill&utm_medium=skill
