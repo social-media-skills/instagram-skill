@@ -1,0 +1,31 @@
+name: test
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  pipeline:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: "1"
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ffmpeg
+        run: |
+          if [ "$RUNNER_OS" = "Linux" ]; then sudo apt-get update && sudo apt-get install -y ffmpeg; fi
+          if [ "$RUNNER_OS" = "macOS" ]; then brew install ffmpeg; fi
+          if [ "$RUNNER_OS" = "Windows" ]; then choco install ffmpeg -y --no-progress; fi
+      - run: pip install pillow tzdata
+      - name: No local paths in the skill
+        run: "! grep -rn '/Users/' skills/ --include='*.md' --include='*.py' --include='*.json'"
+      - name: Example plan passes the checks
+        run: python skills/instagram-skill/scripts/ig_check.py skills/instagram-skill/examples/water-week/plan.json
+      - name: Full pipeline (render, check, fix, Reel tools, schedule, preview, log)
+        run: python tests/run_pipeline.py work
