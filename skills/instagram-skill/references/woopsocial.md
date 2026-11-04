@@ -101,6 +101,9 @@ Always:
 
 ## 5. Read results
 
+WoopSocial provides analytics for posts and accounts. Through the MCP, the skill
+reads the post-level numbers:
+
 `social_account_posts_list` (filter by `socialAccountId` or `postId`) returns each post with
 its stored metrics under `analytics`: views, likes, comments, shares, saves and unique
 impressions, each as values collected over time. Save the response as `metrics.json` and run
